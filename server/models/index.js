@@ -6,7 +6,7 @@ module.exports = {
     post: function () {} // a function which can be used to insert a message into the database
   },
 
-  users: {
+  users: { 
     // Ditto as above.
     get: function () {},
     post: function () {}
