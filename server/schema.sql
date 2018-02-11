@@ -10,6 +10,7 @@
 -- 
 -- ---
 
+
 DROP TABLE IF EXISTS `Messages`;
 		
 CREATE TABLE `Messages` ( 
@@ -51,6 +52,8 @@ ALTER TABLE `Messages` ADD FOREIGN KEY (userid) REFERENCES `users` (id);
 -- Test Data
 -- ---
 
+INSERT INTO `users` (name) VALUES in ('Trev-G', 'Sue-Wee');
+
 INSERT INTO `Messages` (userid, text) VALUES (1, 'the goat');
 INSERT INTO `Messages` (userid, text) VALUES (2, 'the boat');
 INSERT INTO `Messages` (userid, text) VALUES (1, 'the yoat');
@@ -58,5 +61,3 @@ INSERT INTO `Messages` (userid, text) VALUES (2, 'the toat');
 INSERT INTO `Messages` (userid, text) VALUES (1, 'the foat');
 INSERT INTO `Messages` (userid, text) VALUES (2, 'the coat');
 
-INSERT INTO `users` (name) VALUES
-in ('Trev-G', 'Sue-Wee');

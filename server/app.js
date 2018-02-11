@@ -17,6 +17,16 @@ app.set('port', 3001);
 // Logging and parsing
 app.use(morgan('dev'));
 app.use(parser.json());
+//  db.connection.query('SELECT * FROM Messages ', 
+//   (error, results, fields) =>{
+//         if (error) {
+//           console.log(`error: ${error}`);
+//         } if (results) {
+//             console.log(`results: ${JSON.stringify(results,null, 2)}`)
+//             console.log(`fields: ${JSON.stringify(fields, null, 2)}`)
+//           return results;
+//         }
+//  });
 
 // Set up our routes
 app.use('/classes', router);
